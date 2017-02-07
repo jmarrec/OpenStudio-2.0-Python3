@@ -21,7 +21,7 @@ Tested with the following:
 
 3.Checkout the develop branch
 
-   git checkout develop
+    git checkout develop
 
 4.Create a directory called `build` and enter it
 
