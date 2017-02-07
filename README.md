@@ -10,6 +10,9 @@ There is a specific README file: [Building_OS2.0_on_Mac](Building_OS2.0_on_Mac.m
 ### In CCMake
 
 (Still building `./openstudiocore/`)
+
+After enabling `BUILD_PYTHON_BINDINGS=ON` then configuring (`[c]`), enabling advanced mode (`[t]`).
+
 I've pointed the python variables to my Python 3.5 virtual environment:
 
     //Path to a program.
@@ -23,6 +26,10 @@ I've pointed the python variables to my Python 3.5 virtual environment:
     
     //Path to a library.
     PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
+
+Configure, then generate (`[g]`).
+
+`make -j XX` where XX = number of cores. This will generate the bindings.
 
 ### Making them work
 
