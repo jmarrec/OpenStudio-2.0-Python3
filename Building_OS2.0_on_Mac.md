@@ -11,27 +11,27 @@ Tested with the following:
     
 ## Procedure
 
-1. Clone the git repository and checkout the develop branch. `cd`to the location where you want to put the OpenStudio folder
+1.Clone the git repository and checkout the develop branch. `cd`to the location where you want to put the OpenStudio folder
 
     git clone https://github.com/NREL/OpenStudio.git
 
-2. Enter the newly created `OpenStudio` folder
+2.Enter the newly created `OpenStudio` folder
 
     cd OpenStudio
 
-3. Checkout the develop branch
+3.Checkout the develop branch
 
    git checkout develop
 
-4. Create a directory called `build` and enter it
+4.Create a directory called `build` and enter it
 
     mkdir build && cd build/
 
-5. Call ccmake to build the `./openstudiocore` source directory and NOT the root source
+5.Call ccmake to build the `./openstudiocore` source directory and NOT the root source
 
     ccmake ../openstudiocore
 
-6. Configure (press `[c]`)
+6.Configure (press `[c]`)
 
 This will download a lot of dependencies, and will finally likely throw out an error about missing OpenSSL: on Mac OS X 10.11 and above the development headers are no longer included.
 
@@ -52,7 +52,7 @@ Configure again (press `[c]`), this time it should work.
 
 Then generate and quit (press `[g]`)
 
-7. Type `make`
+7.Type `make`
 
 If it breaks with the following error:
 
