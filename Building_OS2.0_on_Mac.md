@@ -41,9 +41,9 @@ In CCMake, Enable the detailed configuration by pressing `[t]`.
 
 Find and configure the OPENSSL options:
 
-* OPENSSL_INCLUDE_DIR = /usr/local/opt/openssl/include
-* OPENSSL_CRYPTO_LIBRARY = /usr/local/opt/openssl/lib/libcrypto.a
-* OPENSSL_SSL_LIBRARY = /usr/local/opt/openssl/lib/libssl.a
+* `OPENSSL_INCLUDE_DIR = /usr/local/opt/openssl/include`
+* `OPENSSL_CRYPTO_LIBRARY = /usr/local/opt/openssl/lib/libcrypto.a`
+* `OPENSSL_SSL_LIBRARY = /usr/local/opt/openssl/lib/libssl.a`
 
 It's possible your openssl version might be in your Cellar if it's not in /usr/local/opt
 (try `brew link --force openssl`, and `brew list openssl`)
