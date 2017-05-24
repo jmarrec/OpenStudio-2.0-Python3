@@ -27,6 +27,14 @@ I've pointed the python variables to my Python 3.5 virtual environment:
     //Path to a library.
     PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 
+or for my py36:
+
+     PYTHON_EXECUTABLE        /Users/julien/Virtualenvs/py36/bin/python                                                                       
+     PYTHON_INCLUDE_DIR       /Users/julien/Virtualenvs/py36/include/python3.6m                                                               
+     PYTHON_LIBRARY           /Users/julien/Virtualenvs/py36/lib/python3.6/config-3.6m-darwin/libpython3.6.dylib                              
+     PYTHON_LIBRARY_DEBUG     /Users/julien/Virtualenvs/py36/lib/python3.6/config-3.6m-darwin/libpython3.6.dylib 
+
+
 Configure, then generate (`[g]`).
 
 `make -j XX` where XX = number of cores. This will generate the bindings.
