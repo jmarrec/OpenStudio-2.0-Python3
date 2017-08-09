@@ -23,13 +23,13 @@ Tested with the following:
 
     git checkout develop
 
-4.Create a directory called `build` and enter it
+4.I suggest keeping the folder in which you'll build outside of the OpenStudio/ folder, that'll be easier to completely delete all files
+    cd ..
+    mkdir OS-build && cd OS-build/
 
-    mkdir build && cd build/
+5.Call ccmake to build the `OpenStudio/openstudiocore` source directory and NOT the root source
 
-5.Call ccmake to build the `./openstudiocore` source directory and NOT the root source
-
-    ccmake ../openstudiocore
+    ccmake ../OpenStudio/openstudiocore
 
 6.Configure (press `[c]`)
 
@@ -54,7 +54,7 @@ Then generate and quit (press `[g]`)
 
 7.Type `make`
 
-If it breaks with the following error:
+If it breaks with the following error (I no longer get that problem):
 
     make[2]: *** No rule to make target `src/utilities/idd/IddFieldEnums.ixx', needed by `openstudio_utilities_static_HeadersGenerated_done.stamp'.  Stop.
     make[1]: *** [src/utilities/CMakeFiles/openstudio_utilities_static_GeneratedHeaders.dir/all] Error 2
