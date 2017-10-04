@@ -6,8 +6,15 @@
 Tested with the following:
 
     MacOS Sierra 10.12.2
-    ccmake version 3.7.0
+    ccmake version 3.7.0, 
     Xcode 8.1, Build version 8B62 (no reason it shouldn't work with XCode 8.2)
+
+Update:
+
+    MacOS Sierra 10.12.6
+    ccmake version 3.9.3
+    xcode version 9.0 (9A235)
+
 
 ## Procedure
 
@@ -24,6 +31,7 @@ Tested with the following:
     git checkout develop
 
 4.I suggest keeping the folder in which you'll build outside of the OpenStudio/ folder, that'll be easier to completely delete all files
+
     cd ..
     mkdir OS-build && cd OS-build/
 
@@ -35,7 +43,7 @@ Tested with the following:
 
 This will download a lot of dependencies, and will finally likely throw out an error about missing OpenSSL: on Mac OS X 10.11 and above the development headers are no longer included.
 
-If you get the openssl error: `brew install openssl`
+If you get the openssl error: `brew install openssl` (brew as in [Homebrew](https://brew.sh/), the missing package manager for macOS)
 
 In CCMake, Enable the detailed configuration by pressing `[t]`.
 
