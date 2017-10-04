@@ -5,10 +5,10 @@
 ## Version:
 Tested with the following:
 
-    MacOS Sierra 10.12.2	
+    MacOS Sierra 10.12.2
     ccmake version 3.7.0
     Xcode 8.1, Build version 8B62 (no reason it shouldn't work with XCode 8.2)
-    
+
 ## Procedure
 
 1.Clone the git repository and checkout the develop branch. `cd`to the location where you want to put the OpenStudio folder
@@ -51,6 +51,16 @@ It's possible your openssl version might be in your Cellar if it's not in /usr/l
 Configure again (press `[c]`), this time it should work.
 
 Then generate and quit (press `[g]`)
+
+Recommended Settings:
+
+* Set the `BUILD_TYPE` (eg: `Debug`)
+* Enable `BUILD_TESTING` (for GTest)
+
+Optional Settings:
+
+* Enable `CMAKE_EXPORT_COMPILE_COMMANDS` (for use with ViM & YouCompleteMe)
+
 
 7.Type `make`
 
